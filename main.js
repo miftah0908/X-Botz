@@ -37,10 +37,10 @@ const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
 const starts = async (pebz = new WAConnection()) => {
     pebz.logger.level = 'warn'
     pebz.version = [2, 2143, 3]
-    pebz.browserDescription = [ 'FebZBotz', 'Safari', '3.0' ]
+    pebz.browserDescription = [ 'GanzZ Botz', 'Safari', '3.0' ]
     pebz.on('qr', () => {
-    pebz.sendMessage(`6285849261085@s.whatsapp.net`, `「 BOT CONNECT 」\n\n${a}Hallo Kak!! Saya ${Miminnya} Izin Menggunakan Bot Ini!!${a}\n\n${a}BOT TERSAMBUNG PADA${a}\n${a}${time2}${a}\n\n${a}PROFILE${a}\n*Nama* : ${Miminnya}\n*Nomor* : ${ownerNumber}\n*Status* : Online\n\n${a}TERIMAKASIH KAK PEBRI!!${a}`, MessageType.extendedText)
-    console.log(color('[','white'), color('!','cyan'), color(']','white'), color('Scan Ngab, Ga Scan Mati Aja Anjeng'))
+    pebz.sendMessage(`6285171226069@s.whatsapp.net`, `「 BOT CONNECT 」\n\n${a}Hallo Kak!! Saya ${Miminnya} Izin Menggunakan Bot Ini!!${a}\n\n${a}BOT TERSAMBUNG PADA${a}\n${a}${time2}${a}\n\n${a}PROFILE${a}\n*Nama* : ${Miminnya}\n*Nomor* : ${ownerNumber}\n*Status* : Online\n\n${a}TERIMAKASIH MIFTAH GANZZ!!${a}`, MessageType.extendedText)
+    console.log(color('[','white'), color('!','cyan'), color(']','white'), color('Scan Cepet Ngab, Qr Kadaluarsa 20 detik'))
     })
 
     fs.existsSync('./ciko.json') && pebz.loadAuthInfo('./ciko.json')
@@ -53,6 +53,7 @@ const starts = async (pebz = new WAConnection()) => {
     console.log(color(' ||> ','cyan'), color(`     Hallo Kak ${Miminnya} ${ucapanWaktu}`, 'cyan'))
     console.log(color(' ||> ','cyan'), color('    Jangan Lupa Subscrib Yt FEBZABOTZ😝', 'cyan'))
     console.log(color(' ||> ','cyan'), color('   Script Ori By Febriansyah ItsMeFebri🛐', 'cyan'))
+    console.log(color(' ||> ','cyan'), color('        Recode By Miftah GanzZ 😁', 'cyan'))
     console.log(color('','aqua'), color(`||================================================||`, "cyan"))
     start('2','')
     })
@@ -107,7 +108,7 @@ const starts = async (pebz = new WAConnection()) => {
               buff = await getBuffer(
                `http://hadi-api.herokuapp.com/api/card/welcome?nama=${anu_user}&descriminator=${groupMembers.length}&memcount=${memeg}&gcname=${encodeURI(mdata.subject)}&pp=${pic}&bg=https://www.linkpicture.com/q/20211125_113317.jpg`)
              
-              pebz.sendMessage(mdata.id, { contentText: `${teks}`, footerText: `*Made With💞Febri*`, buttons: [{buttonId: `.selamatdatang`,buttonText:{displayText: 'WELCOME'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
+              pebz.sendMessage(mdata.id, { contentText: `${teks}`, footerText: `*Made With💞Miftah*`, buttons: [{buttonId: `.selamatdatang`,buttonText:{displayText: 'WELCOME'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
 		}
 		     if (!isWelkom) return
             if (anu.action == 'remove' && !mem.includes(pebz.user.jid)) {
@@ -120,7 +121,7 @@ const starts = async (pebz = new WAConnection()) => {
                 out = `@${num.split('@')[0]} Leave In *${mdata.subject}*`
          //      buff = await getBuffer(pic)
                      buff = await getBuffer(`http://hadi-api.herokuapp.com/api/card/goodbye?nama=${anu_user}&descriminator=${groupMembers.length}&memcount=${memeg}&gcname=${encodeURI(mdata.subject)}&pp=${pp_user}&bg=https://www.linkpicture.com/q/20211125_113317.jpg`)
-               pebz.sendMessage(mdata.id, { contentText: `${out}`, footerText: `*Made With💞Febri*`, buttons: [{buttonId: `.bay`,buttonText:{displayText: 'BYE KAK👋'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
+               pebz.sendMessage(mdata.id, { contentText: `${out}`, footerText: `*Made With💞Miftah*`, buttons: [{buttonId: `.bay`,buttonText:{displayText: 'BYE KAK👋'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
            }
 		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
